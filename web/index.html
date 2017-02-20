@@ -1,0 +1,64 @@
+<!--
+Version 1
+Currently able to access the user's webcam and display a stream
+Goals: One of the following two options:
+	1) Find a way to slice the video stream into individual still frames
+	2) Find a way to apply a filter onto the video stream itself
+
+Option 2 is preferable, as Option 1 would require a decent chunk of memory to store the frames before passing to the filter function
+
+Current limtations: couldn't get it to work on Chrome for some reason.  Works on Firefox - Jack
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Capstone Video Feed Stuff </title>
+
+<style>
+#container{
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #333 solid;
+}
+#videoElement{
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}
+</style>
+</head>
+
+<body>
+<h1>The Webcam access</h1>
+
+<div id="container">
+	<video autoplay="true" id="videoElement" controls="true">
+	</video>
+</div>
+
+<script>
+var video = document.querySelector("#videoElement");
+
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+
+if(navigator.getUserMedia){
+	navigator.getUserMedia({video: true}, handleVideo, videoError);
+}
+
+function handleVideo(stream){
+	video.src = window.URL.createObjectURL(stream);
+	alert('Camera Access Successful');
+}
+
+function videoError(e){
+	alert('Camera Access Failed');
+}
+</script>
+
+<p>A brief description of the video feed here</p>
+
+</body>
+</html>
