@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\flipcam.cs">
+    <Files>
+      <File FileName="Assets\NewBehaviourScript.cs" Line="24" Column="18" />
+      <File FileName="Assets\webview.js" Line="1" Column="1" />
+      <File FileName="Assets\mapToPoints.js" Line="1" Column="1" />
+      <File FileName="Assets\glasses_color.js" Line="24" Column="1" />
+      <File FileName="Assets\flipcam.cs" Line="13" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="flipcam.cs" selected="True" />
+          </Node>
+          <Node name="Assembly-UnityScript" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
